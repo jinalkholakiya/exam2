@@ -1,0 +1,57 @@
+/* css rest */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    height: 10vh;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    /* justify-content: center; */
+}
+
+/* logo & image */
+.logo {
+    margin: 10px 34px;
+}
+
+.logo img {
+    height: 56px;
+    margin: 3px 6px;
+}
+.logo img:hover {
+    height: 56px;
+    margin: 3px 6px;
+    background-image: url('download.jfif');
+}
+header {
+    background-color: powderblue;
+    color: black;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+.item a:hover{ 
+    background-color: black;
+    border-radius: 30px 30px ;
+    margin: 22px;
+    color: white;
+}
+li {
+    display: inline;
+    font-size: 1.5vw;
+     padding: 13px;
+} 
+
+body {
+    background-color: pink;
+    min-height: 800px;
+    color: red;
+    z-index: 2;
+    position: sticky;
+}

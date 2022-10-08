@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-Form</title>
+    <link rel="icon" type="" href="favicon-32x32.png">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            margin-top: 52px;
+            
+        }
+        
+        table{
+            border: 3px double gray;
+            border-color:lightslategray;
+            width: 100%;
+            height: 45vh;
+            padding: 80px;
+            background-color: burlywood;
+            border-radius: 111px;
+        }
+        input[type="submit"] {
+         padding: 15px 40px;
+        }
+        td.submit{
+            text-align:center;
+            
+        }
+        tr{
+            margin: 14px;
+            width: 54px;
+        }
+        th {
+        padding-top: 15px;
+         padding-bottom: 15px;
+         border-radius: 30px;
+         background-color: #0e2449;
+         color: white;
+        }
+        input{
+            padding: 8px;
+            border-radius: 25px;
+            margin: 20px 0 38px 20px;
+        }
+        td {
+         padding: 8px 80px 0 40px;
+         border-radius: 25px;
+         color: white;
+           font-size: 26px;
+         border-color: burlywood;
+          background-color: #0a0416;
+        }
+        input[type="radio"] {
+        margin: 18px 20px 24px 10px;
+        }
+        input[type="checkbox"] {
+         margin-right: 20px;
+        }
+        textarea {
+        border-radius: 28px;
+        width: 202px;
+        height: 68px;
+        }
+        input[type="color"] {
+         border-radius: 20px;
+         width: 110px;
+         height: 50px;
+        }
+        select {
+         width: 90px;
+          height: 35px;
+          margin: 22px;
+         padding: 6px 16px;
+         border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="form">
+            <table border="2px" >
+                <tr width="15%">
+                    <th>Label</th>
+                    <th> Fild </th>
+                </tr>
+                    <tr>
+                    <td>Name:-</td>
+                    <td><input type="text" name="name" value="" required> </td>
+                    </tr>
+                    <tr>
+                    <td>Email:-</td>
+                    <td><input type="email" name="email" value="" required> </td>
+                    </tr>
+                    <tr>
+                    <td> Address:-</td>
+                    <td><textarea> </textarea> </td>
+                    </tr>
+                    <tr>
+                    <td> Gender:-</td>
+                    <td>Mail<input type="radio" name="male" value="mail" required> 
+                        Femail<input type="radio" name="male" value="femail" > </td>
+                    </tr>
+                    <tr>
+                        <td> Phone No.:-</td>
+                        <td><input type="phone" name="number" value="" maxi="10" required> </td>
+                        </tr>
+                        <tr>
+                            <td>Password:-</td>
+                            <td><input type="Password" name="password" value="" required> </td>
+                            </tr>
+                    
+                    <tr>
+                        <td> Upload File:-</td>
+                        <td><input type="file" name="email" value="" required> </td>
+                        </tr>
+                        <tr>
+                            <td>Hobbi</td><td>
+                            Reading <input type="checkbox" name="" value="" required> 
+                           Palying <input type="checkbox" name="" value="" required>
+                            Singin<input type="checkbox" name="" value="" required> 
+                            </td> </tr>
+                            <tr>
+                            <td> Color:-</td>
+                            <td><input type="color" name="color" value="" maxi="10" required> </td>
+                            </tr>
+                            <tr>
+                                <td>Date:-</td>
+                                <td><input type="date" name="date" value=""> </td>
+                            </tr>  
+                            <tr>
+                                <td>City:-</td>
+                                <td><select>
+                                    <option> Surat </option>
+                                    <option> Surat </option>
+                                    <option> Surat </option>
+                                    <option> Surat </option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td class="submit" colspan="2"><input type="submit" name="Submit" value="Submit"></td>
+                            </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>

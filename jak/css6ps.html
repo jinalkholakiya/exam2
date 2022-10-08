@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css6ps</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            padding: 15px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            list-style: none;
+            display: inline;
+            padding: 34px;
+            /* margin: 30px; */
+        }
+
+        header {
+            background-color: powderblue;
+            color: blue;
+            height: 60px;
+        }
+
+        .left {
+
+            height: 40vh;
+            width: 20vw;
+            background-color: brown;
+            color: lightsalmon;
+        }
+
+        .right {
+
+            height: 40vh;
+            width: 20vw;
+            background-color: plum;
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem.</div>
+        <div class="left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, ullam.</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUE-1</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: linear-gradient(blue, green, yellow);
+            height: 100vh;
+        }
+
+        .container {
+            background-color: whitesmoke;
+            margin: 10% 20%;
+            height: auto;
+            width: auto;
+            box-shadow: 2px 2px 14px -2px;
+        }
+
+        .frm {
+            margin: 10px 10px;
+        }
+
+        .btn {
+            border-style: none;
+            text-align: center;
+            height: 30px;
+            width: 160px;
+            background-color: rgba(200, 154, 198, 0.212);
+            border-right: 0.5px solid black;
+            width: -webkit-fill-available;
+        }
+
+        .btn:hover {
+            font-size: 15px;
+            color: blueviolet;
+            transition: 1s;
+            border-bottom: 3px solid blueviolet;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .i1 {
+            border-style: none;
+            border-bottom: solid 1px black;
+            height: 40px;
+            width: 385px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+
+        .i2 {
+            border-style: none;
+            border-bottom: solid 1px black;
+            height: 40px;
+            width: 784px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+
+        .top {
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .stop {
+            margin-top: 20%;
+        }
+
+        .sbtn {
+            height: 30px;
+            width: 15%;
+            background-color: blueviolet;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .upper {
+            padding-top: 10px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="frm">
+            <form action="#">
+                <div class="upper">
+                    <h1 class="top">Sign Up</h1>
+                    <p class="top">Let's Us create your account.</p>
+                </div>
+                <div class="flex">
+                    <button class="btn">ACCOUNT</button>
+                    <button class="btn">PERSONAL INFO</button>
+                    <button class="btn">PAYMENT DETAIL</button>
+                </div>
+                <div class="top">
+                    <h5>Enter your Detail below.</h5>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="fname" placeholder="FirstName" class="i1" required>
+                        </td>
+                        <td>
+                            <input type="text" name="lname" placeholder="LastName" class="i1" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="email" name="mail" placeholder="Email" class="i2" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" name="pwd" placeholder="Password" class="i1" required maxlength="6">
+                        </td>
+                        <td>
+                            <input type="password" placeholder="Confirm Password" class="i1" required maxlength="6">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" name="number" placeholder="Mobile Number" class="i2" required
+                                maxlength="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center><input type="submit" value="Next" class="sbtn"></center>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
